@@ -2,7 +2,7 @@
 
 A modern, beautifully designed weather application built with React Native and Expo. Get real-time weather information and forecasts for your current location with an intuitive user interface and smooth animations.
 
-## 🌤️ Features
+## Features
 
 - **Current Weather Display**: View real-time temperature, weather conditions, and weather descriptions for your current location
 - **5-Day Forecast**: See detailed 5-day weather forecasts with hourly breakdowns
@@ -14,7 +14,7 @@ A modern, beautifully designed weather application built with React Native and E
 - **Loading States**: Smooth loading indicators while fetching data
 - **Error Handling**: User-friendly error messages with quick access to settings when needed
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: React Native with Expo
 - **Language**: TypeScript
@@ -28,7 +28,7 @@ A modern, beautifully designed weather application built with React Native and E
 - **Maps**: React Native Maps support
 - **State Management**: React Hooks
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -37,13 +37,13 @@ Before you begin, ensure you have the following installed:
 - **Expo CLI**: `npm install -g expo-cli`
 - **OpenWeather API Key**: Get one free at [openweathermap.org](https://openweathermap.org/api)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd bweather-main
+git clone https://github.com/pthanksdev/Atmos_Weather_App.git
+cd Atmos_Weather_App-main
 ```
 
 ### 2. Install Dependencies
@@ -73,7 +73,7 @@ This will start the Expo development server. You can then:
 - Press `w` to open in web browser
 - Scan the QR code with Expo Go app on your physical device
 
-## 📱 Project Structure
+## Project Structure
 
 ```
 bweather-main/
@@ -109,7 +109,7 @@ bweather-main/
 └── README.md                      # This file
 ```
 
-## 🔑 Key Components
+## Key Components
 
 ### Main Screen (`app/index.tsx`)
 
@@ -142,7 +142,7 @@ bweather-main/
 - Fetches 5-day forecast data
 - Handles API authentication
 
-## 🔐 Environment Variables
+## Environment Variables
 
 Create a `.env` file or set environment variables:
 
@@ -152,7 +152,7 @@ EXPO_PUBLIC_OPEN_WEATHER_KEY=your_openweather_api_key
 
 The API key is obtained from [OpenWeather API](https://openweathermap.org/api) (free tier available).
 
-## 🎯 Available Scripts
+## Available Scripts
 
 ```bash
 npm start           # Start development server
@@ -163,7 +163,7 @@ npm run web         # Start web browser version
 npm run lint        # Run ESLint code checker
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Weather Icons
 
@@ -177,7 +177,7 @@ Edit [constants/weatherBackgrounds.ts](constants/weatherBackgrounds.ts) to custo
 
 Modify [services/openWeather.ts](services/openWeather.ts) to change weather API endpoints or settings.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to:
 
@@ -187,11 +187,11 @@ Contributions are welcome! Please feel free to:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "Missing EXPO_PUBLIC_OPEN_WEATHER_KEY" Error
 
@@ -216,7 +216,7 @@ This project is open source and available under the MIT License.
 - Reinstall dependencies: `rm -rf node_modules && npm install`
 - Reset project: `npm run reset-project`
 
-## 📚 Resources
+## Resources
 
 - [Expo Documentation](https://docs.expo.dev/)
 - [React Native Documentation](https://reactnative.dev/)
@@ -224,7 +224,7 @@ This project is open source and available under the MIT License.
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [Expo Router Guide](https://expo.github.io/router/)
 
-## 📞 Support
+## Support
 
 For issues, questions, or suggestions, please open an issue in the repository or contact the development team.
 
