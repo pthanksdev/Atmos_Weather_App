@@ -231,4 +231,6 @@ For issues, questions, or suggestions, please open an issue in the repository or
 ---
 
 **Made by pthanks using React Native and Expo**
+
+
 "# Atmos_Weather_App" 
