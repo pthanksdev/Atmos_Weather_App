@@ -50,3 +50,11 @@ export type ForecastItem = {
 export type ForecastResponse = {
   list: ForecastItem[];
 };
+
+export type GeocodeResult = {
+  name: string;
+  lat: number;
+  lon: number;
+  country: string;
+  state?: string;
+};
