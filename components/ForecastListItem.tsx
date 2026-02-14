@@ -8,9 +8,14 @@ import { Image, StyleSheet, Text } from 'react-native';
 type Props = {
   item: ForecastItem;
   timezone: number;
+  tempUnitLabel?: string;
 };
 
-export default function ForecastListItem({ item, timezone }: Props) {
+export default function ForecastListItem({
+  item,
+  timezone,
+  tempUnitLabel = 'C',
+}: Props) {
   const weatherId = item.weather[0].id;
   const pod = item.sys?.pod;
   const iconKey = getIconKeyFromOpenWeather(weatherId, pod);
@@ -22,7 +27,9 @@ export default function ForecastListItem({ item, timezone }: Props) {
         {formatTimeFromUnixWithOffset(item.dt, timezone)}
       </Text>
       <Image source={iconSource} style={styles.icon} />
-      <Text style={styles.temp}>{Math.round(item.main.temp)}°</Text>
+      <Text style={styles.temp}>
+        {Math.round(item.main.temp)} {tempUnitLabel}
+      </Text>
     </BlurView>
   );
 }

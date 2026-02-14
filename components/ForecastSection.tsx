@@ -7,6 +7,7 @@ import ForecastListItem from './ForecastListItem';
 type Props = {
   items: ForecastItem[];
   timezone: number;
+  tempUnitLabel?: string;
 };
 
 type Section = {
@@ -20,7 +21,11 @@ function titleFromKey(key: string) {
   return key.toUpperCase();
 }
 
-export default function ForecastSection({ items, timezone }: Props) {
+export default function ForecastSection({
+  items,
+  timezone,
+  tempUnitLabel,
+}: Props) {
   const grouped = groupForecastByDayLabel(items, timezone);
   const sections: Section[] = Object.keys(grouped).map((key) => ({
     key,
@@ -46,7 +51,11 @@ export default function ForecastSection({ items, timezone }: Props) {
               horizontal
               keyExtractor={(item) => String(item.dt)}
               renderItem={({ item }) => (
-                <ForecastListItem item={item} timezone={timezone} />
+                <ForecastListItem
+                  item={item}
+                  timezone={timezone}
+                  tempUnitLabel={tempUnitLabel}
+                />
               )}
               showsHorizontalScrollIndicator={false}
               contentContainerStyle={{ gap: 10 }}
